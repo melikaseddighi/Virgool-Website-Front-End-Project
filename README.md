@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a front-end website simulate virgool website (https://virgool.io)that provides users with an interactive platform to share content, connect with others, and manage their profiles. The website integrates several features, including authentication, post creation, profile management, and content tagging, and uses an external API to handle various functionalities like authentication, data retrieval, and file uploads.
+This is a front-end website simulate virgool website (https://virgool.io) that provides users with an interactive platform to share content, connect with others, and manage their profiles. The website integrates several features, including authentication, post creation, profile management, and content tagging, and uses an external API to handle various functionalities like authentication, data retrieval, and file uploads.
 
 ## Features
 
