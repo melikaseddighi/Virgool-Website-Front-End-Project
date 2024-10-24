@@ -1,0 +1,13 @@
+.ck {
+  &-toolbar {
+    border: none !important;
+  }
+  &-content {
+    border: none !important;
+    outline: none !important;
+    margin-top: 5rem;
+    min-height: 50rem;
+    box-shadow: none !important;
+    padding: 2.5rem 1.5rem;
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  &__search {
+    width: 35rem;
+  }
+  &__info {
+    &-icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

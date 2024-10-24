@@ -1,0 +1,52 @@
+//!---------------- other Colors-----------//
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+//!--------------- override Colors----------//
+
+$primary: #34434d;
+$secondary: #0f6ba8;
+$secondaryDark: #3c4b6d;
+$tertiary: #35444d;
+$gray: #e1e1e1;
+$subtitle: #818489;
+$search: #eaeaec;
+$success: #3bae03;
+$color-white: #fff;
+$color-orange: #ffb74d;
+$color-dark: #464749;
+$color-gray: rgb(107, 107, 107);
+$color-subtitle: #5b5b5b;
+$danger: #cf1717;
+//!--------------- Color MAPS---------------//
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "secondaryDark": $secondaryDark,
+  "tertiary": $tertiary,
+  "subtitle": $subtitle,
+  "search": $search,
+  "gray": $gray,
+  "success": $success,
+  "danger": $danger,
+);
+
+//!--------------- fontSize Variables---------------//
+
+$fs-1: 2.5rem;
+$fs-2: 2rem;
+$fs-3: 1.75rem;
+$fs-4: 1.5rem;
+$fs-5: 1.25rem;
+$fs-6: 1rem;

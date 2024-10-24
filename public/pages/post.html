@@ -1,0 +1,149 @@
+<section class="post">
+  <div class="container">
+    <div
+      class="post__content py-4 d-flex justify-content-between align-items-center">
+      <div class="text-danger fs-4 fw-bold" id="error-published"></div>
+      <div id="published" class="flex-center gap-2">
+        <i class="fa-solid fa-gear text-subtitle"></i>
+        <div
+          style="cursor: pointer"
+          class="text-secondary fs-5 fw-bold d-flex align-items-center gap-1">
+          <span>انتشار نوشته</span>
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<form id="Form-Post">
+  <section class="post__main">
+    <div class="container">
+      <div class="py-9">
+        <input
+          class="post__title"
+          data-title="عنوان"
+          placeholder="عنوان را اینجا وارد کنید" />
+      </div>
+      <div id="editor">
+        <p class="post__description">
+          محتوای ویرایشی شما اینجا قرار خواهد گرفت.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="prev-post hidden">
+    <div class="container mt-8 mt-lg-0">
+      <div class="row prev-centerize">
+        <div class="col-lg-6 col-12">
+          <div>
+            <h3 class="fs-4 text-secondary fw-bold">انتخاب تصویر پست</h3>
+            <p class="fs-5 text-subtitle my-2">
+              می‌توانید از این بخش نحوه نمایش پست خود را در صفحات مختلف مانند
+              صفحه اصلی ویرگول یا پروفایلتان تغییر دهید.
+            </p>
+            <div
+              id="upload-div"
+              style="height: 12rem"
+              class="rounded-3 overflow-hidden w-100 bg-gray flex-center">
+              <p class="fs-4 text-subtitle" style="cursor: pointer">
+                برای آپلود تصویر کلیک کنید
+              </p>
+              <input
+                accept=".jpg,.jpeg,.png"
+                type="file"
+                id="file-input"
+                hidden />
+            </div>
+          </div>
+          <div class="mt-5">
+            <h3 class="fs-4 text-secondary fw-bold">پیش نمایش تصویر پست</h3>
+            <p class="fs-5 text-subtitle my-2">
+              در این بخش تصویر پستی که انتخاب کردید برای شما نمایش داده می شود
+            </p>
+            <div class="rounded-3 overflow-hidden w-100 bg-gray flex-center">
+              <img
+                class="object-fit-cover"
+                style="max-height: 20rem"
+                id="preview-image"
+                src="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div>
+            <h3 class="fs-4 text-secondary fw-bold">انتخاب دسته بندی</h3>
+            <p class="fs-5 text-subtitle my-2">
+              می‌توانید از این بخش نحوه نمایش پست خود را در صفحات مختلف مانند
+              صفحه اصلی ویرگول یا پروفایلتان تغییر دهید.
+            </p>
+            <select id="category-post" class="prev-select"></select>
+          </div>
+
+          <div class="mt-5">
+            <h3 class="fs-4 text-secondary fw-bold">مدت زمان خوندن</h3>
+            <p class="fs-5 text-subtitle my-2">
+              مدت زمان تقریبی خوندن این پست را انتخاب کنید (دقیقه)
+            </p>
+            <div class="range-slider">
+              <div class="flex-center gap-1">
+                <span>0</span>
+                <input
+                  type="range"
+                  id="rangeInput"
+                  min="0"
+                  max="60"
+                  value="0" />
+                <span class="val">60</span>
+              </div>
+              <p class="text-subtitle fs-4 mt-4">
+                مدت زمان خوندن:
+                <span class="text-secondary fw-bold" id="value">0 </span>
+                دقیقه
+              </p>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h3 class="fs-4 text-secondary fw-bold">
+              پست خود را ساده‌تر به دست خوانندگان برسانید
+            </h3>
+            <p class="fs-5 text-subtitle my-2">
+              حداکثر ۵ تگ به پست خود اضافه کنید تا خوانندگان راحت‌تر بفهمند
+              مطلبتان در چه مورد است.
+            </p>
+            <span class="fs-5 mt-3 text-subtitle my-2 fw-bold">
+              تگها را با علامت خط تیره یا Enter از هم جدا کنید.
+            </span>
+            <div class="tags-block position-relative d-flex mt-3" tabindex="0">
+              <ul class="tags-block-list">
+                <!-- <li class="tags-block-list--item"><span>dsadsd</span><button class="tags-block-list--remove">x</button></li> -->
+              </ul>
+              <input
+                class="tags-block--add"
+                type="text"
+                name="tags"
+                placeholder="افزودن تگ..."
+                dir="right"
+                data-editor-autosave="true"
+                autocomplete="off"
+                value="" />
+              <ul class="tags-autocomplete"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="w-100 mt-5 d-flex justify-content-end">
+            <button
+              id="submit-post"
+              class="bg-secondary border-0 rounded-3 py-2 px-3 flex-center text-white">
+              اشتراک گذاری پست
+            </button>
+          </div>
+        </div>
+        <div class="prev-centerize-icon">
+          <i id="close-setting" class="fas fa-close fs-1 text-subtitle"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>

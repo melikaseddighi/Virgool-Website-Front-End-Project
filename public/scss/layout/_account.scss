@@ -1,0 +1,28 @@
+.account {
+  max-width: 340px;
+  min-width: 280px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.35);
+  &::before {
+    background-color: $color-white;
+    content: "";
+    display: block;
+    height: 14px;
+    left: 48px;
+    position: absolute;
+    top: -16px;
+    transform: rotate(45deg) translate(6px, 6px);
+    width: 14px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+  &.hidden {
+    display: none;
+  }
+}
+.login-activate.hidden {
+  display: none !important;
+}
+
+.login-NoActivate.hidden {
+  display: none !important;
+}

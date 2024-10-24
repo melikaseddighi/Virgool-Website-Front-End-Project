@@ -1,0 +1,144 @@
+.post {
+  background-color: #f3f3f3 !important;
+  &__title {
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &__publish {
+    position: absolute;
+    top: 3rem;
+    left: -2rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%, 12.9% 50%);
+    transform: rotate(270deg);
+    color: #fff;
+    font-weight: bold;
+    width: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__profile {
+    height: 10rem;
+    width: 90%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    top: 90%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: #fff;
+    padding: 0 2rem;
+    font-weight: bold;
+  }
+}
+
+.prev {
+  &-post {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    &.hidden {
+      display: none;
+    }
+  }
+  &-centerize {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 108rem;
+    height: 40rem;
+    &-icon {
+      position: absolute;
+      top: -8rem;
+      right: -2rem;
+      cursor: pointer;
+    }
+  }
+  &-select {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 1rem;
+  }
+}
+
+.tags {
+  &-block {
+    background-color: #fafafa;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    outline: 1px solid #fafafa;
+    outline: none;
+    padding: 7px;
+    &-list {
+      &--item {
+        background-color: #cfcfcf;
+        border: 1px solid hsla(0, 0%, 52%, 0.3);
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 0.8em;
+        font-weight: 400;
+        margin-left: 0.5rem;
+        padding: 0 0.5rem;
+        position: relative;
+        padding: 0 2rem;
+      }
+      &--remove {
+        border: none;
+        background-color: transparent;
+        color: red;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+      }
+    }
+    &--add {
+      background: none;
+      border: navajowhite;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}
+
+.range {
+  &-slider {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    input[type="range"] {
+      width: 250px;
+    }
+  }
+}
+
+.delete-post {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

@@ -1,0 +1,109 @@
+<style>
+  .active {
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+  }
+</style>
+<div class="container my-9">
+  <ul class="mt-7 d-flex gap-6 border-bottom border-1 border-gray">
+    <li class="dashboard__item active py-4">نوشته ها</li>
+    <li class="dashboard__item py-4">کاربران</li>
+  </ul>
+
+  <section id="post-container" class="section-item">
+    <template id="post-template">
+      <div class="border-bottom border-gray py-7">
+        <div class="flex-between gap-2">
+          <div class="w-75">
+            <div class="d-flex align-items-center gap-2">
+              <span
+                style="width: 4rem; height: 4rem"
+                class="rounded-circle flex-center overflow-hidden">
+                <img
+                  id="author-image"
+                  class="w-100 h-100 object-fit-cover"
+                  src=""
+                  onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'" />
+              </span>
+              <a href="/user" id="author-name" class="fs-4 fw-bold">ناشناس</a>
+              <span id="post-publish" class="text-subtitle fs-5 me-3"
+                >5 دقیقه پیش</span
+              >
+            </div>
+            <a id="post-link" href="/blog" class="post-blog" data-select-id="">
+              <h3 id="post-title" class="my-4 fw-bold">
+                اتفاقات اقتصادی کلیدی در دولت پزشکیان
+              </h3>
+              <section
+                id="post-description"
+                class="fs-5 text-subtitle ellipsis-2">
+                دولت رئیسی در ایجاد زیرساخت های اساسی نسبتا موفق عمل نمود. اما
+                در استفاده قاطعانه از این زیرساخت ها کاملا ضعیف و بزدلانه عمل
+                کرد......
+              </section>
+            </a>
+          </div>
+          <div class="w-25 d-flex justify-content-end">
+            <a
+              href="/blog"
+              data-select-id=""
+              style="width: 12rem; height: 12rem"
+              class="post-blog rounded-2 bg-gray overflow-hidden">
+              <img
+                id="post-image"
+                class="w-100 h-100 object-fit-cover"
+                onerror="this.src='https://www.warnersstellian.com/Content/images/product_image_not_available.png'"
+                src="" />
+            </a>
+          </div>
+        </div>
+        <div class="flex-between py-4">
+          <div class="d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center gap-2">
+              <a
+                href="/tag"
+                id="post-category"
+                class="px-3 py-1 flex-center bg-gray fs-4 rounded-4"
+                >اقتصاد</a
+              >
+            </div>
+            <div class="text-subtitle fs-5">
+              خواندن
+              <span id="post-readtime">2</span>
+              دقیقه
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </section>
+  <section id="user-container" class="section-item d-none">
+    <template id="user-template">
+      <div
+        class="d-flex justify-content-between align-items-center mt-7 border-bottom border-1 py-4">
+        <div class="flex-center gap-2">
+          <div>
+            <img
+              id="image-search"
+              style="width: 5rem; height: 5rem"
+              class="rounded-circle object-fit-cover"
+              src=""
+              onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'" />
+          </div>
+          <div>
+            <a href="/user" id="name-search" class="fs-4 fw-bold"
+              >برنامه نویسی</a
+            >
+            <p id="bio-search" class="fs-5 text-subtitle">
+              آموزش زبان های برنامه نویسی
+            </p>
+          </div>
+        </div>
+        <div
+          class="text-secondary border px-3 py-2 flex-center border-secondary rounded-2 fs-5">
+          دنبال کردن
+        </div>
+      </div>
+    </template>
+  </section>
+</div>

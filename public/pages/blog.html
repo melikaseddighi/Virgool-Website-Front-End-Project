@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row">
+    <div class="blog col-12 col-md-9 pt-7 ps-9">
+      <div class="d-flex align-items-center justify-content-between gap-3">
+        <div class="d-flex gap-3">
+          <a
+            href="/user"
+            class="blog__profile rounded-circle overflow-hidden d-flex">
+            <img
+              class="img-author w-100 h100"
+              src=""
+              onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'" />
+          </a>
+          <div class="d-flex flex-column gap-1">
+            <a href="/user" class="name-author fw-bold fs-3"> </a>
+            <div class="d-flex gap-3">
+              <span class="fs-5 text-subtitle"
+                >خواندن
+                <span id="time-blog"> 5 </span>
+                دقیقه</span
+              >
+
+              <span id="time-publish" class="fs-5 text-subtitle"
+                >5 ساعت پیش</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="cursor: pointer"
+          class="publish-post d-none py-2 px-3 bg-secondary rounded-2 text-white">
+          <i class="fas fa-plus"></i>
+          <span>انتشار پست</span>
+        </div>
+      </div>
+
+      <div class="my-9 blog__content">
+        <h1 id="blog-title" class="fw-bold fs-3 my-3">عنوان بلاگ</h1>
+        <p
+          id="blog-description"
+          class="text-subtitle text-justify fs-4"
+          style="line-height: 3rem">
+          متن بلاگ
+        </p>
+      </div>
+      <div class="d-flex my-4 gap-2" id="post-tags"></div>
+      <div
+        class="py-4 d-flex flex-column gap-2 border-top border-1 border-gray">
+        <div class="flex-between">
+          <a href="/user" class="d-flex gap-2 align-items-center">
+            <img
+              class="img-author blog__author rounded-circle"
+              src=""
+              onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'" />
+            <span class="name-author fw-bold fs-5"></span>
+          </a>
+          <a
+            class="bg-secondary py-1 px-3 flex-center rounded-2 text-white gap-2">
+            <span>دنبال کنید</span>
+            <i class="fas fa-plus"></i>
+          </a>
+        </div>
+        <div class="my-3">
+          <p
+            id="description-author"
+            class="text-subtitle blog__author-description fs-5 w-75">
+            درباره نویسنده
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

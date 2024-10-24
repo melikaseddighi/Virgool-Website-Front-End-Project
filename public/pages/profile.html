@@ -1,0 +1,128 @@
+<main>
+  <div class="dashboard">
+    <div class="container">
+      <div class="dashboard__content">
+        <div>
+          <img
+            id="user-image"
+            src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+            class="dashboard__image" />
+        </div>
+        <div>
+          <h2 id="user-name" class="fs-4 fw-bold my-4">ناشناس</h2>
+        </div>
+        <div class="d-flex align-items-center gap-8 fs-4 fw-bold">
+          <div>
+            توسط
+            <span id="user-followers" class="text-secondary">0</span>
+            نفر دنبال می شوید
+          </div>
+          <div>
+            <span id="user-following" class="text-secondary">0</span>
+            نفر را دنبال میکنید
+          </div>
+        </div>
+        <div
+          class="border border-2 border-black my-4 rounded-pill py-1 px-8 flex-center fw-bold fs-4">
+          <a href="/setting">تنظیمات حساب کاربری</a>
+        </div>
+        <div class="flex-center gap-3">
+          <a> <i class="fa-brands fa-instagram fs-1 text-subtitle"></i> </a>
+          <a> <i class="fa-brands fa-github fs-1 text-subtitle"></i> </a>
+        </div>
+        <ul class="mt-4 flex-center fw-bold gap-2 fs-4">
+          <li class="dashboard__item text-center active">
+            <a class="dashboard__item-link h-100 w-100">پست ها</a>
+          </li>
+          <li class="dashboard__item text-center">
+            <a class="dashboard__item-link h-100 w-100">لیست ها</a>
+          </li>
+          <li class="dashboard__item text-center">
+            <a class="dashboard__item-link h-100 w-100">انتشارات</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section class="section-item posts dashboard__main mb-8">
+    <div class="container">
+      <div id="post-container" class="row dashboard__post">
+        <template id="post-template">
+          <div class="col-4 my-5">
+            <div
+              style="height: 25rem"
+              class="post-blog w-100 rounded-3 position-relative d-flex">
+              <img
+                id="post-image"
+                class="post-blog w-100 h-100 object-fit-cover rounded-3"
+                onerror="this.src='https://www.warnersstellian.com/Content/images/product_image_not_available.png'"
+                src="" />
+              <span class="post-blog delete-post">
+                <i class="fas fa-trash text-danger"></i>
+              </span>
+              <span id="publish-status" class="post__publish bg-danger"
+                >عدم انتشار</span
+              >
+              <div class="post__profile">
+                <a
+                  href="/blog"
+                  id="post-title"
+                  class="post-blog w-100 justify-content-center d-flex fs-4 fw-bold m-0 text-center border-bottom border-1 py-3">
+                  برنامه نویسی خوبه یا بد؟
+                </a>
+                <div class="flex-between py-2">
+                  <ul class="d-flex gap-2 flex-center" style="padding: 1rem 0">
+                    <li class="fs-5 text-subtitle gap-2 flex-center">
+                      <i class="fas fa-clock"></i>
+                      <span id="post-publish"> 23دقیقه پیش </span>
+                    </li>
+                    <li class="fs-5 text-subtitle gap-2 flex-center">
+                      <i class="fas fa-tag"></i>
+                      <span id="post-category">اقتصاد</span>
+                    </li>
+                  </ul>
+                  <ul class="flex-center gap-3">
+                    <li class="fs-5 text-subtitle gap-1 flex-center">
+                      <i class="fas fa-thumbs-up"></i>
+                      <span id="post-like">1</span>
+                    </li>
+                    <li class="fs-5 text-subtitle gap-1 flex-center">
+                      <i class="fas fa-heart"></i>
+                      <span id="post-comment">1</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="dashboard__empty flex-center flex-column">
+        <p class="text-center mt-5 mb-3 fw-bold fs-4 w-auto">
+          شما هنوز پستی در ویرگول ننوشته‌اید. همین حالا اقدام به نوشتن اولین پست
+          خود کنید.
+        </p>
+        <a
+          href="/post"
+          class="border border-2 border-black my-4 rounded-pill py-1 px-8 flex-center fw-bold fs-4"
+          >نوشتن پست</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="section-item lists d-none">
+    <div class="dashboard__empty flex-center flex-column">
+      <p class="text-center mt-5 mb-3 fw-bold fs-4 w-auto">
+        شما هنوز هیچ لیستی در ویرگول ایجاد نکرده اید
+      </p>
+    </div>
+  </section>
+  <section class="section-item publisher d-none">
+    <div class="dashboard__empty flex-center flex-column">
+      <p class="text-center mt-5 mb-3 fw-bold fs-4 w-auto">
+        شما هنوز انتشاراتی در ویرگول ایجاد نکرده‌اید. همین حالا اقدام به ایجاد
+        اولین انتشارات خود کنید.
+      </p>
+    </div>
+  </section>
+</main>

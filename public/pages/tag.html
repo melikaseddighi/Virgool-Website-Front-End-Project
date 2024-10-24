@@ -1,0 +1,60 @@
+<div class="container my-9">
+  <div class="d-flex align-items-center gap-3">
+    <span
+      style="width: 5rem; height: 5rem"
+      class="rounded-circle bg-subtitle flex-center">
+      <i class="fas fa-tag"></i>
+    </span>
+    <h2 id="tag-content" class="fw-bold fs-4"></h2>
+  </div>
+
+  <div>
+    <ul class="d-flex mt-8 border-bottom border-1">
+      <li
+        class="fs-5 text-subtitle border-bottom border-2 border-secondary py-3">
+        جدیدترین ها
+      </li>
+    </ul>
+    <div id="category-wrapper" class="row">
+      <template id="category-template">
+        <div class="col-4 my-5">
+          <div
+            style="height: 25rem"
+            class="post-blog w-100 rounded-3 position-relative d-flex">
+            <img
+              id="post-image"
+              class="post-blog w-100 h-100 object-fit-cover rounded-3"
+              onerror="this.src='https://www.warnersstellian.com/Content/images/product_image_not_available.png'"
+              src="" />
+            <div class="tag__content">
+              <a
+                href="/blog"
+                id="post-title"
+                class="post-blog w-100 justify-content-center d-flex fs-4 fw-bold m-0 text-center border-bottom border-1 py-3">
+                برنامه نویسی خوبه یا بد؟
+              </a>
+              <div class="flex-between py-2">
+                <ul class="d-flex gap-2 flex-center" style="padding: 1rem 0">
+                  <li class="fs-5 text-subtitle gap-2 flex-center">
+                    <i class="fas fa-clock"></i>
+                    <span id="post-publish"> 23دقیقه پیش </span>
+                  </li>
+                </ul>
+                <ul class="flex-center gap-3">
+                  <li class="fs-5 text-subtitle gap-1 flex-center">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span id="post-like">1</span>
+                  </li>
+                  <li class="fs-5 text-subtitle gap-1 flex-center">
+                    <i class="fas fa-heart"></i>
+                    <span id="post-comment">1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>

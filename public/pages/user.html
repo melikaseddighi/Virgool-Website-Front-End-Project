@@ -1,0 +1,131 @@
+<main>
+  <div class="dashboard">
+    <div class="container">
+      <div class="dashboard__content">
+        <div>
+          <img
+            style="background-color: burlywood; border: 1px solid #ccc"
+            id="user-image"
+            src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+            class="dashboard__image" />
+        </div>
+        <div class="my-4">
+          <h2 id="user-name" class="fs-4 fw-bold my-4 text-center">ناشناس</h2>
+          <p id="user-bio" class="fs-5 fw-bold">منتور و مدرس برنامه نویسی وب</p>
+        </div>
+        <div class="d-flex align-items-center gap-8 fs-4 fw-bold">
+          <div>
+            توسط
+            <span id="user-followers" class="text-secondary">0</span>
+            نفر دنبال می شود
+          </div>
+          <div>
+            <span id="user-following" class="text-secondary">0</span>
+            نفر را دنبال میکند
+          </div>
+        </div>
+
+        <div class="flex-center gap-3 my-4">
+          <a> <i class="fa-brands fa-instagram fs-1 text-subtitle"></i> </a>
+          <a> <i class="fa-brands fa-github fs-1 text-subtitle"></i> </a>
+        </div>
+        <ul class="mt-4 flex-center fw-bold gap-2 fs-4">
+          <li class="dashboard__item text-center">
+            <a class="dashboard__item-link active h-100 w-100"></a>
+              پست ها</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="post-container">
+    <template id="post-template">
+      <section class="section-item posts dashboard__main">
+        <div class="container">
+          <div class="row dashboard__post">
+            <div class="border-bottom border-gray py-7">
+              <div class="flex-between gap-2">
+                <div class="w-75">
+                  <div class="d-flex align-items-center gap-2">
+                    <span
+                      style="width: 4rem; height: 4rem"
+                      class="rounded-circle flex-center overflow-hidden">
+                      <img
+                        id="author-image"
+                        class="w-100 h-100 object-fit-cover"
+                        src=""
+                        onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'"/>
+                    </span>
+                    <a id="author-name" class="fs-4 fw-bold">ناشناس</a>
+                    <span id="post-publish" class="text-subtitle fs-5 me-3"
+                      >5 دقیقه پیش</span
+                    >
+                  </div>
+                  <a
+                    id="post-link"
+                    href="/blog"
+                    class="post-blog"
+                    data-select-id="">
+                    <h3 id="post-title" class="my-4 fw-bold">
+                      اتفاقات اقتصادی کلیدی در دولت پزشکیان
+                    </h3>
+                    <section
+                      id="post-description"
+                      class="fs-5 text-subtitle ellipsis-2">
+                      دولت رئیسی در ایجاد زیرساخت های اساسی نسبتا موفق عمل نمود.
+                      اما در استفاده قاطعانه از این زیرساخت ها کاملا ضعیف و
+                      بزدلانه عمل کرد......
+                    </section>
+                  </a>
+                </div>
+                <div class="w-25 d-flex justify-content-end">
+                  <a
+                    href="/blog"
+                    data-select-id=""
+                    style="width: 12rem; height: 12rem"
+                    class="post-blog rounded-2 bg-gray overflow-hidden">
+                    <img
+                      id="post-image"
+                      class="w-100 h-100 object-fit-cover"
+                      onerror="this.src='https://www.warnersstellian.com/Content/images/product_image_not_available.png'"
+                      src="" />
+                  </a>
+                </div>
+              </div>
+              <div class="flex-between py-4">
+                <div class="d-flex align-items-center gap-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <a
+                      id="post-category"
+                      class="px-3 py-1 flex-center bg-gray fs-4 rounded-4"
+                      >اقتصاد</a
+                    >
+                  </div>
+                  <div class="text-subtitle fs-5">
+                    خواندن
+                    <span id="post-readtime">2</span>
+                    دقیقه
+                  </div>
+                </div>
+                <div class="d-flex gap-7 text-subtitle">
+                  <div id="post-like-elm" class="post-blog flex-center gap-2">
+                    <i class="fa-regular fa-heart fs-1"></i>
+                    <span id="post-like" class="fs-5">0</span>
+                  </div>
+                  <div class="flex-center gap-2">
+                    <i class="fa-regular fa-message fs-1"></i>
+                    <span id="post-comment" class="fs-5">0</span>
+                  </div>
+                  <div id="post-save-elm" class="post-blog flex-center gap-2">
+                    <i class="fa-regular fa-bookmark fs-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+  </div>
+</main>

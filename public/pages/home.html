@@ -1,0 +1,229 @@
+<section class="w-100 bg-tertiary py-8">
+  <div
+    class="container d-flex justify-content-center justify-content-sm-between text-white">
+    <div class="d-flex flex-column align-items-center align-items-sm-start">
+      <span class="fs-big fw-bold">به ویرگول،</span>
+      <span class="fs-big fw-bold mt-5">دنیای کلمات خوش آمدید!</span>
+      <p
+        style="line-height: 3.8rem"
+        class="slider__description w-50 text-break fw-bold mt-4">
+        ویرگول بستری برای خواندن، گفت‌وگو درباره‌ی موضوعات مورد علاقه و به
+        اشتراک‌گذاری ایده‌های اصیل و عمیق در زندگی شخصی، حرفه‌ای و اجتماعی است.
+      </p>
+    </div>
+    <div class="d-sm-block d-none">
+      <div>
+        <img src="./images/virgool-logo-1.svg" />
+      </div>
+      <div>
+        <a
+          href="/post"
+          class="py-2 px-3 flex-center bg-secondary text-white gap-3 fs-5 rounded-pill mt-5"
+          >شروع به نوشتن
+          <i class="fas fa-chevron-left"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-lg-8 col-12 py-6">
+      <div class="" style="width: 90%" id="post-container">
+        <template id="post-template">
+          <div class="border-bottom border-gray py-7">
+            <div class="flex-between gap-2">
+              <div class="w-75">
+                <div class="d-flex align-items-center gap-2">
+                  <span
+                    style="width: 4rem; height: 4rem"
+                    class="rounded-circle flex-center overflow-hidden">
+                    <img
+                      id="author-image"
+                      class="w-100 h-100 object-fit-cover"
+                      src=""
+                      onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'" />
+                  </span>
+                  <a href="/user" id="author-name" class="fs-4 fw-bold"
+                    >ناشناس</a
+                  >
+                  <span id="post-publish" class="text-subtitle fs-5 me-3"
+                    >5 دقیقه پیش</span
+                  >
+                </div>
+                <a
+                  id="post-link"
+                  href="/blog"
+                  class="post-blog"
+                  data-select-id="">
+                  <h3 id="post-title" class="my-4 fw-bold">
+                    اتفاقات اقتصادی کلیدی در دولت پزشکیان
+                  </h3>
+                  <section
+                    id="post-description"
+                    class="fs-5 text-subtitle ellipsis-2">
+                    دولت رئیسی در ایجاد زیرساخت های اساسی نسبتا موفق عمل نمود.
+                    اما در استفاده قاطعانه از این زیرساخت ها کاملا ضعیف و
+                    بزدلانه عمل کرد......
+                  </section>
+                </a>
+              </div>
+              <div class="w-25 d-flex justify-content-end">
+                <a
+                  href="/blog"
+                  data-select-id=""
+                  style="width: 12rem; height: 12rem"
+                  class="post-blog rounded-2 bg-gray overflow-hidden">
+                  <img
+                    id="post-image"
+                    class="w-100 h-100 object-fit-cover"
+                    onerror="this.src='https://www.warnersstellian.com/Content/images/product_image_not_available.png'"
+                    src="" />
+                </a>
+              </div>
+            </div>
+            <div class="flex-between py-4">
+              <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-2">
+                  <a
+                    href="/tag"
+                    id="post-category"
+                    class="px-3 py-1 flex-center bg-gray fs-4 rounded-4"
+                    >اقتصاد</a
+                  >
+                </div>
+                <div class="text-subtitle fs-5">
+                  خواندن
+                  <span id="post-readtime">2</span>
+                  دقیقه
+                </div>
+              </div>
+              <div class="d-flex gap-7 text-subtitle">
+                <div id="post-like-elm" class="flex-center gap-2">
+                  <i class="fa-regular fa-heart fs-1"></i>
+                  <span id="post-like" class="fs-5">0</span>
+                </div>
+                <div class="flex-center gap-2">
+                  <i class="fa-regular fa-message fs-1"></i>
+                  <span id="post-comment" class="fs-5">0</span>
+                </div>
+                <div id="post-save-elm" class="flex-center gap-2">
+                  <i class="fa-regular fa-bookmark fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div class="col-lg-4 col-12 px-5 py-6 border-end border-gray">
+      <div class="w-100 rounded-3 overflow-hidden">
+        <img class="w-100" src="./images/virgool-business-sidebar.webp" />
+      </div>
+      <div class="py-4 border-bottom border-1 border-gray">
+        <div class="d-flex align-items-center gap-2">
+          <span
+            style="width: 3.5rem; height: 3.5rem"
+            class="rounded-circle bg-gray flex-center">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </span>
+          <span class="fw-bold text-subtitle fs-4"
+            >پست‌های صوتی انتخابی برای شما</span
+          >
+        </div>
+        <div class="my-3">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="podcast-wrapper">
+              <template id="podcast-template">
+                <div class="swiper-slide">
+                  <img id="swiper-img" src="./images/podcast1.webp" />
+                </div>
+              </template>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="flex-between mt-4">
+          <span id="podcast-name" class="text-subtitle fs-4">ژن کست</span>
+          <a class="fs-5 text-secondary"
+            >مشاهده همه
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </div>
+      </div>
+      <div class="py-3" id="sound-wrapper">
+        <template id="sound-template">
+          <div class="flex-between my-4">
+            <a class="d-flex align-items-center gap-3">
+              <div>
+                <img
+                  id="sound-img"
+                  style="width: 5rem; height: 5rem"
+                  class="rounded-4"
+                  src="./images/podcast4.webp" />
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <span id="sound-text" class="fs-5 fw-bold text-subtitle"
+                  >ژن اول | کرونا و ژنتیک</span
+                >
+                <span id="sound-time" class="fs-4 text-gray">28:21</span>
+              </div>
+            </a>
+            <div>
+              <span
+                id="sound-src"
+                data-src=""
+                style="width: 4rem; height: 4rem"
+                class="flex-center bg-secondary p-3 rounded-circle sound-link">
+                <i class="fas fa-play text-white"></i>
+              </span>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="py-4 border-top border-1 border-gray">
+        <div class="d-flex align-items-center gap-2">
+          <span
+            style="width: 3.5rem; height: 3.5rem"
+            class="rounded-circle bg-gray flex-center">
+            <i class="fas fa-tags"></i>
+          </span>
+          <span class="fw-bold text-subtitle fs-4"
+            >موضوعات پیشنهادی برای شما</span
+          >
+        </div>
+        <div class="my-5">
+          <div class="d-flex gap-1 flex-wrap" id="category-wrapper">
+            <template id="category-template">
+              <a
+                id="tags"
+                href="/tag"
+                class="py-1 px-2 flex-center rounded-2 border border-1 border-gray fs-5 fw-bold"
+                >کسب و کار</a
+              >
+            </template>
+          </div>
+          <div class="d-flex justify-content-end">
+            <a
+              href="/topic"
+              data-select-id=""
+              class="fs-5 text-secondary d-flex align-items-center gap-2"
+              >مشاهده همه
+              <i class="fas fa-chevron-left"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <audio
+      controls
+      class="d-none w-100 position-fixed bottom-0 end-0"
+      style="height: 5rem"
+      id="audio-player"></audio>
+  </div>
+</section>
